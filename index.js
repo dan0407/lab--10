@@ -32,6 +32,7 @@ renderAllPeliculasestreno(peliculas)
 
 function peliculaSelected(position){
     var pelicula= peliculas[position]
-console.log(pelicula)
+document.getElementById("bannerimagen").src=pelicula.Image
+console.log(pelicula);
 } 
 
