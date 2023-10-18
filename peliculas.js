@@ -18,5 +18,7 @@ class Peliculas {
         </div>
     </div>
         `
+        
     }
+    
 }

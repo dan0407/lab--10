@@ -24,10 +24,67 @@ a{
     color: white;
 }
 /* Banner */
+.pelicula-principal {
+	font-size: 16px;
+	min-height: 40.62em;
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(img/john-wick-4-scaled.jpg);
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+}
+
+.pelicula-principal .contenedor {
+	margin: 0 auto;
+	margin-bottom: 6.25em;
+}
+
+.pelicula-principal .titulo {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
+}
+
+.pelicula-principal .descripcion {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+}
+
+.pelicula-principal .boton {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+}
+
+.pelicula-principal .boton:hover {
+	background: #fff;
+	color: #000;
+}
+
+.pelicula-principal .boton i {
+	margin-right: 1.25em;
+}
+
+.bannerimagen{
+    opacity: 50;
+    
+}
 .background--banner{
     height: 100vh;
-    width: 100%;
+    width: 90vh;
     overflow: hidden;
+    opacity: 50;
 }
 .play{
     background-color: rgb(0, 0, 0);
@@ -40,11 +97,12 @@ a{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
     position: absolute;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     background: linear-gradient(0deg, rgb(0, 0, 0) 0%,rgba(0, 0, 0, .9) 1%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 1) 100%);
+    opacity: 50;
 }
 /* Menu */
 .menu{
@@ -133,47 +191,7 @@ a{
         display: flex;
     }
 }
-/* imagotipo */
-.imagotipo{
-    flex: 1;
-    width: 95%;
-    margin-inline: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    gap: 15px;
-}
-.imagotipo--imagen{
-    min-width: 500px;
-}
-.imagotipo--info{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-.imagotipo--info p{
-    border-radius: 10px;
-    font-size: 20px;
-    font-weight: 700;
-    padding: 10px;
-}
-.imagotipo--info p:nth-child(1){
-    border: 1px solid white;
-    background-color: white;
-    cursor: pointer;
-}
-.imagotipo--info p:nth-child(2){
-    border: 1px solid #6d6d63b3;
-    background-color: #6d6d63b3;
-    cursor: pointer;
-    color: white;
-}
-.imagotipo--info p:nth-child(1):hover,
-.imagotipo--info p:nth-child(2):hover{
-    background-color: transparent;
-    color: white;
-}
+
 /* footer */
 .footer{
     padding-top: 20px;
@@ -265,4 +283,86 @@ a{
     align-items: center;
 
 }
+
+.pelicula-principal {
+	font-size: 16px;
+	min-height: 40.62em;
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(img/backdrop.jpg);
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+}
+
+.pelicula-principal .contenedor {
+	margin: 0 auto;
+	margin-bottom: 6.25em;
+}
+
+.pelicula-principal .titulo {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
+}
+
+.pelicula-principal .descripcion {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+}
+
+.pelicula-principal .boton {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+}
+
+.pelicula-principal .boton:hover {
+	background: #fff;
+	color: #000;
+}
+
+.pelicula-principal .boton i {
+	margin-right: 1.25em;
+}
+
+.bannerimagen{
+    opacity: 50;
+
+}
+.contenedor{
+    .menu{
+        width: 100%;
+        margin-inline:auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5px;
+        font-size: 15px;
+        position: fixed;
+        background-color: black;
+    }
     
+    .navegacion{
+        padding-top: 10px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 15px;
+    }
+    @media (min-width:400px) {
+        .navegacion{
+            gap: 15px;
+        }
+    }
+}
